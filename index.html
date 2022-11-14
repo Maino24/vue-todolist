@@ -14,13 +14,20 @@
     <div id="app">
         <div class="container-fluid text-center">
             <input type="text">
-            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-primary">Todo</button>
         </div>
         <!--container todo-->
         <div>
-            <ul>
-                <li v-for="(elem, index) in todolist">{{todo.text}}</li>
-            </ul>
+            <ul class="list-group">
+                <li v-for="(elem, index) in todo" :key="index" class="list-group-item d-flex justify-content-between">
+                    {{elem.text}}
+                    <i class="fa-solid fa-xmark"></i>
+                </li>
+              </ul>
+        </div>
+        <!--container todo fatti-->
+        <div>
+            
         </div>
     </div>
     

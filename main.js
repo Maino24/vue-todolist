@@ -1,10 +1,30 @@
-var app = new Vue ({
-    el: `app`,
+var app = new Vue (
+    {
+
+    el: `#app`,
 
     data: {
 
-        todo: [{
+        todo: [
 
+            {
+                text: `fare esercizio`,
+                boolean: ``
+            },
+            {
+                text: `fare esercizio`,
+                boolean: ``
+            },
+            {
+                text: `fare esercizio`,
+                boolean: ``
+            },
+            {
+                text: `fare esercizio`,
+                boolean: ``
+            },
+
+            /*
             todo1: {
                 text: `fare esercizio`,
                 stato: ``,
@@ -21,9 +41,9 @@ var app = new Vue ({
                 text: ``,
                 stato: ``,
             },
+            */
 
-
-        }]
+        ]
         
     }
 
