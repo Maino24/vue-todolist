@@ -1,3 +1,4 @@
+
 var app = new Vue (
     {
 
@@ -8,7 +9,7 @@ var app = new Vue (
         todo: [
 
             {
-                text: `fare esercizio`,
+                text: `comprare latte`,
                 boolean: false
             },
             {
@@ -60,6 +61,10 @@ var app = new Vue (
 
     methods: {
 
+        //todoInserito: function(){
+            //return this.message
+        //},
+
         elimina: function(index){
             //rimuovere un oggetto dall'array
             //splice: rimuove un elemento di un array grazie alla posizione e ne elimina tanti qunati gli dico dall'elemento trovato
@@ -79,13 +84,5 @@ var app = new Vue (
         }
 
     }
-    
-
-    
-
-
-
-
-
 
 })
