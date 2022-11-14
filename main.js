@@ -22,7 +22,7 @@ var app = new Vue (
             {
                 text: `fare esercizio`,
                 boolean: false
-            },
+            }
 
             /*
             todo1: {
@@ -42,7 +42,20 @@ var app = new Vue (
                 stato: ``,
             },
             */
+        ],
+        todoCompleto: [
+
         ]
+    },
+    beforeUpdate(){
+        //entra quando l'applicativo vue controlla il dom e i dati e i componenti si modificano
+        this.todo.forEach((elem, index)=> {
+            if(elem.boolean == true ){
+                this.todoCompleto.push(elem);
+                this.todo.splice(index,  1)
+            }
+        });
+        
     },
 
     methods: {
