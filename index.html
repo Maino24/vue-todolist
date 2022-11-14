@@ -18,15 +18,16 @@
         </div>
         <!--container todo-->
         <div>
-            <ul class="list-group">
+            <ul class="list-group" v-if="todo.length > 0">
                 <li v-for="(elem, index) in todo" :key="index" class="list-group-item d-flex justify-content-between">
                     {{elem.text}}
-                    <i class="fa-solid fa-xmark text-danger" @click="elimina" ></i>
+                    <i class="fa-solid fa-xmark text-danger" @click="elimina( index )" ></i>
                 </li>
               </ul>
         </div>
         <hr>
         <!--container todo fatti-->
+        <h2 v-else>Non ci sono elementi nella Todo</h2>
         <h3>Todo completate</h3>
         <div>
             <ul class="list-group">

@@ -47,9 +47,12 @@ var app = new Vue (
 
     methods: {
 
-        elimina: function(){
+        elimina: function(index){
+            //rimuovere un oggetto dall'array
+            //splice: rimuove un elemento di un array grazie alla posizione e ne elimina tanti qunati gli dico dall'elemento trovato
             //console.log(`eliminato`)
-            return this.boolean = false
+            //return this.boolean = false
+            this.todo.splice( index, 1)
         }
 
     }
