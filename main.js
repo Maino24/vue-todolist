@@ -9,19 +9,19 @@ var app = new Vue (
 
             {
                 text: `fare esercizio`,
-                boolean: true
+                boolean: false
             },
             {
                 text: `fare esercizio`,
-                boolean: true
+                boolean: false
             },
             {
                 text: `fare esercizio`,
-                boolean: true
+                boolean: false
             },
             {
                 text: `fare esercizio`,
-                boolean: true
+                boolean: false
             },
 
             /*
@@ -51,8 +51,18 @@ var app = new Vue (
             //rimuovere un oggetto dall'array
             //splice: rimuove un elemento di un array grazie alla posizione e ne elimina tanti qunati gli dico dall'elemento trovato
             //console.log(`eliminato`)
-            //return this.boolean = false
+            //return this.boolean = true
             this.todo.splice( index, 1)
+        },
+        todoCompletato: function(index){
+        
+            //this.todo[index].boolean = true;
+            if( this.todo[index].boolean===false){
+                this.todo[index].boolean = true;
+            }else{
+                this.todo[index].boolean = false;
+            }
+
         }
 
     }
