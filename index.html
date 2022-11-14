@@ -21,13 +21,20 @@
             <ul class="list-group">
                 <li v-for="(elem, index) in todo" :key="index" class="list-group-item d-flex justify-content-between">
                     {{elem.text}}
-                    <i class="fa-solid fa-xmark"></i>
+                    <i class="fa-solid fa-xmark text-danger" @click="elimina" ></i>
                 </li>
               </ul>
         </div>
+        <hr>
         <!--container todo fatti-->
+        <h3>Todo completate</h3>
         <div>
-            
+            <ul class="list-group">
+                <li v-if="todo.boolean = false" v-for="(elem, index) in todo" :key="index" class="list-group-item d-flex justify-content-between">
+                    {{elem.text}}
+                    <i class="fa-solid fa-xmark"></i>
+                </li>
+              </ul>
         </div>
     </div>
     

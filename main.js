@@ -9,19 +9,19 @@ var app = new Vue (
 
             {
                 text: `fare esercizio`,
-                boolean: ``
+                boolean: true
             },
             {
                 text: `fare esercizio`,
-                boolean: ``
+                boolean: true
             },
             {
                 text: `fare esercizio`,
-                boolean: ``
+                boolean: true
             },
             {
                 text: `fare esercizio`,
-                boolean: ``
+                boolean: true
             },
 
             /*
@@ -42,10 +42,18 @@ var app = new Vue (
                 stato: ``,
             },
             */
-
         ]
-        
+    },
+
+    methods: {
+
+        elimina: function(){
+            //console.log(`eliminato`)
+            return this.boolean = false
+        }
+
     }
+    
 
     
 
